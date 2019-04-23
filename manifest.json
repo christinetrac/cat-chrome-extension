@@ -1,25 +1,27 @@
 {
-    "name": "sad cats",
-    "version": "0.0",
-    "description": "replaces all images with sad cats",
+    "name": "Bernie Sanders to Grandpa",
+    "version": "0.1",
+    "description": "Replaces 'Bernie Sanders' with 'Grandpa' :)",
     "manifest_version": 2,
     "permissions": ["activeTab", "declarativeContent"],
     "icons": {
-        "16": "images/cat_16.png",
-        "32": "images/cat_32.png",
-        "48": "images/cat_48.png",
-        "128": "images/cat_128.jpg"
+        "16": "images/bern_16.png",
+        "32": "images/bern_32.png",
+        "48": "images/bern_48.png"
     },
-    "page_action": {
+    "browser_action": {
         "default_icon": {
-            "16": "images/cat_16.png",
-            "32": "images/cat_32.png",
-            "48": "images/cat_48.png",
-            "128": "images/cat_128.jpg"
+            "16": "images/bern_16.png",
+            "32": "images/bern_32.png",
+            "48": "images/bern_48.png"
         }
     },
-    "background": {
-        "scripts": ["scripts.js"],
-        "persistent": false
-    }
+    "content_scripts":
+    [
+      {
+        "matches": ["*://*/*"],
+        "js": ["main.js"],
+        "run_at": "document_end"
+      }
+    ]
 }
