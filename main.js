@@ -13,10 +13,10 @@ function findAndReplace(){
 
 function replaceText (node) {
   let value = node.nodeValue;
-  value = value.replace(/Dog/gi, 'Cat');
-  value = value.replace(/dog/gi, 'cat');
-  value = value.replace(/Dogs/gi, 'Cats');
-  value = value.replace(/dogs/gi, 'cats');
+  value = value.replace(/Bernie Sanders/gi, 'Grandpa');
+  value = value.replace(/bernie sanders/gi, 'Grandpa');
+  value = value.replace(/Sanders/gi, 'Grandpa');
+  value = value.replace(/Bernie/gi, 'Grandpa');
   node.nodeValue = value;
 }
 
