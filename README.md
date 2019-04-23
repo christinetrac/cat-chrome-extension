@@ -1,4 +1,2 @@
-# cat-chrome-extension
-a chrome extension that changes 'dog' to 'cat' on your webpage (this extension is meant for the use of cat people only!! dog people can leave!!!!)
-
-if you know a dog person, install this extension to their google chrome to let them know that cats are superior :)
+# grandpa-chrome-extension
+a chrome extension that changes 'bernie sanders' to 'grandpa' because he is such a grandpa!!! :)
