@@ -17,6 +17,7 @@ function replaceText (node) {
   value = value.replace(/bernie sanders/gi, 'Grandpa');
   value = value.replace(/Sanders/gi, 'Grandpa');
   value = value.replace(/Bernie/gi, 'Grandpa');
+  value = value.replace(/BernieSanders/gi, 'Grandpa');
   node.nodeValue = value;
 }
 
